@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/william/Practice-code'
+make: 'test' is up to date.
+make: Leaving directory '/home/william/Practice-code'
+ 
