@@ -1,5 +1,10 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/william/Practice-code'
-make: 'test' is up to date.
+echo "Creating object.."
+gcc                         -I. -lm -DBINARY_SEARCH -c main.c
+echo "Creating object.."
+gcc                         -I. -lm -DBINARY_SEARCH -c search.c
+echo "Checking.."
+gcc                         -I. -lm -DBINARY_SEARCH -o test main.o search.o
 make: Leaving directory '/home/william/Practice-code'
  

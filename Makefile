@@ -7,7 +7,9 @@
 CC = gcc                        # compiler to use
 INCLUDE =  -I.
 #CFLAG = -Wall -Wmissing-prototypes -Wstrict-prototypes -fexceptions
-CFLAG += -DLINEAR_SEARCH
+#CFLAG += -DLINEAR_SEARCH
+CFLAG += -DBINARY_SEARCH
+
 LINKERFLAG = -lm
 
 SRCS := $(wildcard *.c)

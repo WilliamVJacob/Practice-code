@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
- 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Dec 31 21:07:46 2021
+# Make data base, printed on Fri Dec 31 22:05:24 2021
 
 # Variables
 
@@ -42,7 +40,7 @@ XMODIFIERS = @im=ibus
 CURDIR := /home/william/Practice-code
 # makefile
 SHELL = /bin/sh
-# makefile (from 'Makefile', line 11)
+# makefile (from 'Makefile', line 13)
 LINKERFLAG = -lm
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
@@ -130,8 +128,8 @@ VSCODE_CODE_CACHE_PATH = /home/william/.config/Code/CachedData/899d46d82c4c95423
 LOGNAME = william
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# makefile (from 'Makefile', line 10)
-CFLAG = -DLINEAR_SEARCH
+# makefile (from 'Makefile', line 11)
+CFLAG = -DBINARY_SEARCH
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -150,7 +148,7 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
-# makefile (from 'Makefile', line 13)
+# makefile (from 'Makefile', line 15)
 SRCS := main.c search.c
 # environment
 SHLVL = 1
@@ -176,7 +174,7 @@ XDG_CURRENT_DESKTOP = Unity
 MAKE_COMMAND := make
 # default
 .VARIABLES := 
-# makefile (from 'Makefile', line 14)
+# makefile (from 'Makefile', line 16)
 BINS := main search
 # automatic
 *F = $(notdir $*)
@@ -241,14 +239,14 @@ VSCODE_PID = 2920
 
 # Directories
 
-# . (device 2065, inode 28051091): 14 files, no impossibilities.
+# . (device 2065, inode 28051091): 11 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.o: %.c
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 25):
 	@echo "Creating object.."
 	${CC} $(INCLUDE) ${LINKERFLAG} $(CFLAG) -c $<
 
@@ -266,7 +264,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-31 21:06:51.69126426
+#  Last modified 2021-12-31 22:05:13.012398713
 #  File has been updated.
 #  Successfully updated.
 
@@ -274,7 +272,7 @@ test: main.o search.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 19):
+#  recipe to execute (from 'Makefile', line 21):
 	@echo "Checking.."
 	$(CC) $(INCLUDE) ${LINKERFLAG} $(CFLAG) -o $@ $^
 
@@ -284,13 +282,15 @@ test: main.o search.o
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
+#  recipe to execute (from 'Makefile', line 29):
 	@echo "Cleaning up..."
- 
 	rm -rvf *.o ${BINS}
 
 # Not a target:
@@ -313,12 +313,12 @@ search.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 160 B / avg = 7 B
-# current buf: size = 8162 B / used = 160 B / count = 22 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 165 B / avg = 7 B
+# current buf: size = 8162 B / used = 165 B / count = 22 / avg = 7 B
 
-# strcache performance: lookups = 31 / hit rate = 29%
+# strcache performance: lookups = 28 / hit rate = 21%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/31=3%
-# Finished Make data base on Fri Dec 31 21:07:46 2021
+# Load=22/8192=0%, Rehash=0, Collisions=1/28=4%
+# Finished Make data base on Fri Dec 31 22:05:24 2021
 
  
