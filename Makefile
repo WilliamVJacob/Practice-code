@@ -8,7 +8,10 @@ CC = gcc                        # compiler to use
 INCLUDE =  -I.
 #CFLAG = -Wall -Wmissing-prototypes -Wstrict-prototypes -fexceptions
 #CFLAG += -DLINEAR_SEARCH
-CFLAG += -DBINARY_SEARCH
+#CFLAG += -DBINARY_SEARCH
+#CFLAG += -DSELECTION_SORT
+CFLAG += -DBUBBLE_SORT
+
 
 LINKERFLAG = -lm
 
@@ -17,7 +20,7 @@ BINS := $(SRCS:%.c=%)
 
 #all: ${BINS}
 
-test: main.o search.o
+test: main.o search.o sort.o
 	@echo "Checking.."
 	$(CC) $(INCLUDE) ${LINKERFLAG} $(CFLAG) -o $@ $^
 
