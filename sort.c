@@ -37,3 +37,27 @@ int bubble_sort(int input_array[], int array_size) // O(n^2)
     print_array(input_array, array_size);
 }
 #endif /* BUBBLE_SORT*/
+
+#ifdef INSERTION_SORT
+
+int insertion_sort(int input_array[], int array_size)
+{
+    int i, key, j;
+    for (i = 1; i < array_size; i++)
+    {
+        key = input_array[i];
+        j = i - 1;
+
+        /* Move elements of input_array[0..i-1], that are
+        greater than key, to one position ahead
+        of their current position */
+        while (j >= 0 && input_array[j] > key)
+        {
+            input_array[j + 1] = input_array[j];
+            j = j - 1;
+        }
+        input_array[j + 1] = key;
+    }
+    print_array(input_array, array_size);
+}
+#endif

@@ -34,6 +34,9 @@ int main(int argc, char *argv[])
 	bubble_sort(arr,n);
 #endif /*BUBBLE_SORT */
 
+#ifdef INSERTION_SORT
+	insertion_sort(arr,n);
+#endif /* INSERTION_SORT*/
 #ifdef LINEAR_SEARCH
 
 	int result = linear_search(arr, x,n);
