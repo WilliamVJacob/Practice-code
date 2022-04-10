@@ -19,12 +19,25 @@ void swap(int *xp, int *yp)
 	*xp = *yp;
 	*yp = temp;
 }
+
+
+
+void heap_overflow()
+{	// to demonstrate heap overflow
+	for (int i = 0; i < 1000000000; i++)
+	{
+		// Allocating memory without freeing it
+		int *ptr = (int *)malloc(sizeof(int));
+	}
+}
+
 int main(int argc, char *argv[])
 {
 	//printf("This is my driver code\n");
 	int arr[5] = {5,4,3,2,1};
 	int x = 4;
 	int n = NELEMS(arr);
+	heap_overflow();
 #ifdef SELECTION_SORT
 	selection_sort(arr,n);
 
