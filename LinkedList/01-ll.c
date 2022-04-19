@@ -185,7 +185,7 @@ int main(int argc, char *argv[]){
         case 1:
             printf("Enter the number\n");
             scanf("%d", &input);
-            add_at_begining(input);
+            add_at_begining(head,input);
             break;
         case 2:
             printf("Enter the number\n");
